@@ -1,5 +1,5 @@
 base_url = "https://semanticdata.github.io/zola-minimal/"
-title = "📚 Minimal"
+title = "Minimal"
 description = "This repo is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
 
 compile_sass = true

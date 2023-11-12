@@ -1,5 +1,6 @@
 ---
 Title: "Home Sweet Homepage"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit."
 # sort_by: date
 # paginate_by: 3
 ---
@@ -11,12 +12,146 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 ### Table of Contents
 
 - [Blog](posts/)
-- [Test](test/)
 
-## Site Content
+## Markdown Showcase
 
-Cillum minim quis commodo dolor nisi ea aute. Laborum duis ut mollit laborum eiusmod voluptate tempor eu enim eiusmod mollit in exercitation. Esse labore nulla ullamco officia dolore laborum exercitation do eu ad labore voluptate et. Anim veniam enim elit consectetur minim est sit Lorem veniam amet.
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-## Small Note
+[Link to another page](./another-page.html).
 
-Nisi quis eiusmod nulla non consequat velit. Nostrud culpa ipsum officia cupidatat deserunt exercitation adipisicing nulla in do consectetur irure minim amet. Voluptate dolore sit elit ea.
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+# Header 1
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### Header 3
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+#### Header 4
+
+- This is an unordered list following a header.
+- This is an unordered list following a header.
+- This is an unordered list following a header.
+
+##### Header 5
+
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this
+
+* * *
+
+### Here is an unordered list
+
+- Item foo
+- Item bar
+- Item baz
+- Item zip
+
+### And an ordered list
+
+1. Item one
+1. Item two
+1. Item three
+1. Item four
+
+### And a nested list
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+### Definition lists can be used with HTML syntax
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
+
+## Other Elements — Abbr, Sub, Sup, Kbd, Mark
+
+### Description
+
+<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+
+### Subscript
+
+H<sub>2</sub>O
+
+### Superscript
+
+X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+
+### Keys Representation
+
+Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+
+### Highlighting
+
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.

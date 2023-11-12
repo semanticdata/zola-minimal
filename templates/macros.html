@@ -1,30 +1,35 @@
 {% macro post(page) %}
-<a class="post" href="{{page.permalink}}">
-  <article itemscope itemtype="http://schema.org/BlogPosting">
-    {% if page.extra.image %}
+<section class="catalogue">
+  <article class="catalogue-item" itemscope itemtype="http://schema.org/BlogPosting">
+    <a href="{{page.permalink}}">
+
+    {# {% if page.extra.image %}
     <meta itemprop="image" content="{{page.extra.image}}">
     {% else %}
     {% if config.extra.og_image %}
     <meta itemprop="image" content="{{config.extra.og_image}}">
     {% endif %}
     {% endif %}
-    {% if page.taxonomies.categories %}<span class="category">{{page.taxonomies.categories[0]}}</span>{% endif %}
-    <h2 class="title" itemprop="headline">{{ page.title }}</h2>
-    <span class="description">{{ page.description }}</span>
+    {% if page.taxonomies.categories %}<span class="category">{{page.taxonomies.categories[0]}}</span>{% endif %} #}
 
+    <h2 class="catalogue-title" itemprop="headline">{{ page.title }}</h2>
+    <div class="catalogue-line"></div>
+    <p class="description">{{ page.description }}</p>
+    
     {% if page.author %}
     <address itemprop="author" itemscope itemtype="https://schema.org/Person">
       <span itemprop="name">{{page.extra.author}}</span>
     </address>
     {% endif %}
+  </a>
+    
     <div class="extra">
-      {# <span itemprop="datePublished">{{ page.date | date(format="%d/%m/%Y") }}</span> #}
       <span itemprop="datePublished">{{ page.date | date(format="%B %e, %Y") }}</span>
       - {{ page.reading_time }} minutes
     </div>
   </article>
-</a>
-{% endmacro post %}
+</section>
+  {% endmacro post %}
 
 {% macro post_nav(ref, extra) %}
 <nav class="page-navigator">

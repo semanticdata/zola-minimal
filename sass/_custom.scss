@@ -1,8 +1,28 @@
 // Custom CSS goes here //
 @use "vars";
 
+.sidebar-description {
+  padding-top: 1rem;
+}
+
+.extra {
+  font-size: 0.75rem;
+  // padding-bottom: 0.5rem;
+  // margin-bottom: 2rem;
+}
+
+.base-list {
+  list-style: none;
+  padding: 0 15px;
+
+  & > li > a {
+    text-decoration: none;
+    // color: $color-link;
+  }
+}
+
 .page-navigator {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   text-align: center;
 
   & > span,
@@ -23,64 +43,64 @@
   }
 }
 
-.post {
-  width: 100%;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 50px;
+// Custom
 
-  .category,
-  .description,
-  .title {
+.catalogue {
+  &-item {
+    border-bottom: 1px solid grey;
+    color: black;
     display: block;
-  }
+    padding: 2rem 0;
 
-  .category,
-  .description,
-  .extra {
-    font-size: 15px;
-    line-height: 20px;
-    text-decoration: none;
-    // color: $color-black;
-    text-align: justify;
-  }
-
-  .category {
-    margin-bottom: 5px;
-    text-transform: uppercase;
-  }
-
-  .title {
-    // color: $color-black;
-    line-height: 1.1em;
-    font-weight: 600;
-    margin: 0 0 8px;
-  }
-
-  .extra > a {
-    // color: $color-link;
-  }
-
-  address > span,
-  .extra {
-    font-size: 0.75rem;
-  }
-
-  address {
-    font-style: normal;
-
-    & > span {
-      // color: $color-black;
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
     }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: grey;
+    // font-family: $serif-secondary;
+    letter-spacing: 0.5px;
+  }
+
+  &-title {
+    color: black;
+    display: block;
+    // font-family: $sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  &-line {
+    @include vars.transition(all 0.3s ease-out);
+    border-top: 0.2rem solid grey;
+    display: block;
+    width: 2rem;
   }
 }
 
-.base-list {
-  list-style: none;
-  padding: 0 15px;
+.description {
+  // padding-bottom: 0.5rem;
+}
 
-  & > li > a {
-    text-decoration: none;
-    // color: $color-link;
-  }
+.category,
+.description,
+.title {
+  // display: block;
+}
+
+.category,
+.description,
+.extra {
+  color: vars.$font-color;
+  // font-size: 15px;
+  // line-height: 20px;
+  // text-decoration: none;
+  // text-align: justify;
 }
