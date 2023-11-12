@@ -26,9 +26,9 @@
     <header>
       <a href="{{ config.base_url }}">
         <h1>📚 {{ config.title }}</h1>
-      {# {% if site.logo %} #}
-      <img src="{{ get_url(path="img/logo.png") | safe }}" alt="Logo" />
-      {# {% endif %} #}
+        {% if config.extra.logo %}
+        <img src="{{ config.extra.logo }}" alt="Logo" />
+      {% endif %}
     </a>
 
       <p class="sidebar-description">{{ config.description | safe }}</p>
@@ -42,6 +42,8 @@
       <p class="view"><a href="https://github.com/semanticdata/">View my GitHub Profile<br>
         <small>semanticdata</small></a></p>
       {# {% endif %} #}
+
+{# {% include "partials/toc.html" %} #}
 
     </header>
 

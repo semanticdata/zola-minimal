@@ -1,3 +1,49 @@
-// Custom CSS goes here. //
-// Uncomment the next line to use varriables from "vars.scss" Access the variables by typing vars.$variable-name //
-// @use "vars"; //
+// Custom CSS goes here.
+// Uncomment the next line to use varriables from "vars.scss" Access the variables by typing vars.$variable-name
+// @use "vars";
+
+header {
+  & ul,
+  ol {
+    // background: palegreen;
+    padding-left: 1.2rem;
+  }
+
+  & li {
+    // background: aquamarine;
+  }
+}
+
+
+details {
+  padding: .5rem 1rem;
+  // background: #eee;
+}
+
+details summary { 
+  cursor: pointer;
+}
+
+// summary {
+//   list-style-type: none;
+//   font-weight: bold;
+//   padding: 0.5rem;
+// }
+
+details summary > * {
+  display: inline;
+}
+
+details > summary {
+  padding: 4px;
+  // width: 200px;
+  background-color: #eeeeee;
+  // border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > ul {
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}

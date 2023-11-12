@@ -17,6 +17,8 @@ highlight_code = false
 highlight_theme = "ayu-light"
 
 [extra]
+logo_all_pages = true
+logo = "/img/logo.png"
 sidebar = [
   { name = "Links", urls = [
     { name = "Posts", url = "posts/" },
