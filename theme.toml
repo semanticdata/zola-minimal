@@ -1,0 +1,10 @@
+name = "Minimal"
+description = "Description of the theme or, at least a placeholder while a description is written."
+license = "MIT"
+homepage = "https://github.com/semanticdata/zola-minimal"
+min_version = "0.17.2"
+demo = "https://semanticdata.github.io/zola-minimal/"
+
+[author]
+name = "Miguel Pimentel"
+homepage = "https://miguelpimentel.do"
