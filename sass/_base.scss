@@ -1,0 +1,40 @@
+@use "vars";
+
+table {
+  margin: 0 auto;
+  color: vars.$font-color;
+  border: 1px solid vars.$border-color;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table thead th,
+table tfoot th {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+  padding: 2px 4px;
+  border: 1px solid vars.$border-color;
+}
+
+pre,
+code {
+  border: 1px solid vars.$border-color;
+  background-color: vars.$background-color;
+  border-radius: 4px;
+}
+
+code {
+  padding: 1px 2px;
+}
+
+pre {
+  padding: 0.25rem 0.5rem;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+  }
+}

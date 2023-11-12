@@ -1,0 +1,7 @@
+<section class="catalogue">
+	{% for page in paginator.pages -%}
+	{{ macros::post(page=page) }}
+	{%- endfor %}
+</section>
+
+{{ macros::post_nav(ref=paginator, extra=config.extra) }}

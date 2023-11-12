@@ -1,0 +1,35 @@
+// SCSS Variables
+$system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+Helvetica, Arial, sans-serif;
+$font-color: #000;
+$background-color: #d9d9d9;
+$border-color: #807b7b;
+$link-color: #4e8641;
+$mobile-breakpoint: 1000px;
+$page-width: 750px;
+$sidebar-width: 250px;
+
+//Mixins
+@mixin min-screen($min-width: $body-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin max-screen($max-width: $body-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  transition: $args;
+}

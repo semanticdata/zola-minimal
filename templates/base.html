@@ -1,0 +1,55 @@
+{% import 'macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="en-US" <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" itemprop="about" content="{{config.description}}">
+<link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}">
+<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+<meta name="description" itemprop="about" content="{{config.description}}">
+{%- if config.generate_rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
+{%- endif -%}
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
+
+      {% if site.logo %}
+      <img src="{{ get_url(path="img/logo.png") | safe }}" alt="Logo" />
+      {% endif %}
+
+      <p>{{ config.description | safe }}</p>
+
+      {# {% if site.github.is_project_page %} #}
+      <p class="view"><a href="https://github.com/semanticdata/zola-minimal">View the Project on GitHub
+          <small>semanticdata/zola-minimal</small></a></p>
+      {# {% endif %} #}
+
+      {# {% if site.github.is_user_page %} #}
+      <p class="view"><a href="https://github.com/semanticdata">View My GitHub Profile</a></p>
+      {# {% endif %} #}
+
+    </header>
+
+    <section>
+      {% block content %}{% endblock content %}
+    </section>
+
+    <footer>
+      {# {% if site.github.is_project_page %} #}
+      <p>This project is maintained by <a href="https://miguelpimentel.do">Miguel Pimentel</a></p>
+      {# {% endif %} #}
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </p>
+
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+// Custom CSS goes here //
+@use "vars";
+
+.page-navigator {
+  margin-bottom: 15px;
+  text-align: center;
+
+  & > span,
+  & > a {
+    // color: $color-lgrey;
+    font-size: 12px;
+  }
+
+  & > .pages {
+    // color: $color-grey;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  & > a {
+    // color: $color-link;
+    text-decoration: none;
+  }
+}
+
+.post {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 50px;
+
+  .category,
+  .description,
+  .title {
+    display: block;
+  }
+
+  .category,
+  .description,
+  .extra {
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    // color: $color-black;
+    text-align: justify;
+  }
+
+  .category {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    // color: $color-black;
+    line-height: 1.1em;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .extra > a {
+    // color: $color-link;
+  }
+
+  address > span,
+  .extra {
+    font-size: 0.75rem;
+  }
+
+  address {
+    font-style: normal;
+
+    & > span {
+      // color: $color-black;
+    }
+  }
+}
+
+.base-list {
+  list-style: none;
+  padding: 0 15px;
+
+  & > li > a {
+    text-decoration: none;
+    // color: $color-link;
+  }
+}
