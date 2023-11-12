@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: 'Suggest an idea or improvement for [this repo].'
+about: 'Suggest an idea or improvement for Minimal.'
 title: ''
 labels: enhancement
 assignees: 'semanticdata'

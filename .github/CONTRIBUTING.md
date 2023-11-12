@@ -1,4 +1,4 @@
-# Welcome to zola-minimal Contributing Guide
+# Welcome to Minimal Contributing Guide
 
 Read our [Code of Conduct](CODE_OF_CONDUCT) to keep our community approachable and respectable.
 

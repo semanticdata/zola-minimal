@@ -1,6 +1,6 @@
 base_url = "https://semanticdata.github.io/zola-minimal/"
 title = "Minimal"
-description = "This repo is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt."
 
 compile_sass = true
 build_search_index = false
@@ -19,7 +19,6 @@ highlight_theme = "ayu-light"
 [extra]
 sidebar = [
   { name = "Links", urls = [
-    { name = "Test", url = "test/" },
     { name = "Posts", url = "posts/" },
     { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
     { name = "Tags", url = "tags/" },

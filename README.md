@@ -38,8 +38,8 @@ Before using the theme, you need to install the [Zola](https://www.getzola.org/d
 ## Quick Start
 
 ```bash
-git clone git@github.com:semanticdata/zola-minimalistic.git
-cd zola-minimalistic
+git clone git@github.com:semanticdata/zola-minimal.git
+cd zola-minimal
 zola serve
 # open http://127.0.0.1:1111/ in the browser
 ```

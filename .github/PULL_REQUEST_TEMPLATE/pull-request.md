@@ -8,4 +8,4 @@ assignees: 'semanticdata'
 
 **Please describe your proposed changes**
 
-A description of the changes proposed in the pull request.
+A detailed description of the changes proposed in the pull request.

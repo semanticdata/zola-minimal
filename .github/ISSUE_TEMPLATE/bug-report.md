@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: 'Something about [this repo] isn't working the way you expect.'
+about: 'Something about Minimal isn't working the way you expect.'
 title: ''
 labels: bug
 assignees: 'semanticdata'
@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
 
-- Device: [e.g. iPhone14, Pixel6]
+- Device: [e.g. iPhone14, Pixel6, SamsungGalaxyS20FE]
 - OS: [e.g. iOS, Android, Windows]
 - Browser [e.g. chrome, safari, firefox]
 

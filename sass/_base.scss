@@ -1,11 +1,95 @@
 @use "vars";
 
-table {
-  margin: 0 auto;
+// Core Style
+body {
+  background-color: vars.$background-color;
   color: vars.$font-color;
-  border: 1px solid vars.$border-color;
-  border-collapse: collapse;
+  padding: 2.5rem;
+  font-family: vars.$theme-font;
   font-size: 14px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: vars.$font-color;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 1rem;
+}
+
+a {
+  // color: blueviolet;
+  color: vars.$link-color;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #750099;
+}
+
+a small {
+  font-size: 11px;
+  color: vars.$small-text-color;
+  margin-top: -0.3em;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 1px solid vars.$border-color;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+// Layout
+header {
+  width: 270px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+  width: 500px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+footer {
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 table thead th,
@@ -15,14 +99,16 @@ table tfoot th {
 
 table th,
 table td {
+  color: vars.$font-color;
   padding: 2px 4px;
   border: 1px solid vars.$border-color;
 }
 
+// Code
 pre,
 code {
   border: 1px solid vars.$border-color;
-  background-color: vars.$background-color;
+  background-color: vars.$block-background;
   border-radius: 4px;
 }
 
@@ -36,5 +122,100 @@ pre {
 
   > code {
     border: 0;
+  }
+}
+
+kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+// Others
+.sidebar-description {
+  padding-top: 1rem;
+}
+
+.extra {
+  font-size: 0.75rem;
+}
+
+// Blog posts paginator
+.catalogue {
+  border-bottom: 1px solid vars.$border-color;
+  border-width: 1px 0;
+  padding: 0.5rem 0;
+  margin: 0 0 1rem;
+  &-item {
+    border-bottom: 1px solid vars.$border-color;
+    padding-bottom: 2rem;
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: vars.$small-text-color;
+    // font-family: $serif-secondary;
+    letter-spacing: 0.5px;
+  }
+
+  &-title {
+    display: block;
+    // color: black;
+    // font-family: $sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  &-line {
+    @include vars.transition(all 0.3s ease-out);
+    border-top: 0.2rem solid grey;
+    display: block;
+    width: 2rem;
+  }
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  color: vars.$font-color;
+  text-align: justify;
+}
+
+// Paginator controls
+.page-navigator {
+  margin-bottom: 1rem;
+  text-align: center;
+
+  & > span,
+  & > a {
+    // color: $color-lgrey;
+    font-size: 12px;
+  }
+
+  & > .pages {
+    // color: $color-grey;
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  & > a {
+    color: vars.$font-color;
+    text-decoration: none;
   }
 }

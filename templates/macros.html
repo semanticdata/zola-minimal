@@ -36,14 +36,14 @@
   {% if ref.previous %}
   <a href="{{ ref.previous }}">&laquo; Previous</a>
   {% else %}
-  <span>&laquo; Previous</span>
+  <span></span>
   {% endif %}
   <span class="pages"> Page {{ ref.current_index }} of {{ ref.number_pagers }}
   </span>
   {% if ref.next %}
   <a href="{{ ref.next }}">Next &raquo;</a>
   {% else %}
-  <span>Next &raquo;</span>
+  <span></span>
   {% endif %}
 </nav>
 {% endmacro %}

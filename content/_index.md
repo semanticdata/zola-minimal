@@ -1,6 +1,5 @@
 ---
 Title: "Home Sweet Homepage"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit."
 # sort_by: date
 # paginate_by: 3
 ---
@@ -9,21 +8,17 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bib
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam.
 
-### Table of Contents
-
-- [Blog](posts/)
+While you are here, would you like to visit the [Blog](posts/)?
 
 ## Markdown Showcase
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[Link to another page](posts/long-article).
 
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -111,7 +106,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Logo](img/logo.png)
 
 ### Definition lists can be used with HTML syntax
 
