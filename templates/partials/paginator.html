@@ -1,7 +1,7 @@
-<section>
+<div>
 	{% for page in paginator.pages -%}
 	{{ macros::post(page=page) }}
 	{%- endfor %}
-</section>
+</div>
 
 {{ macros::post_nav(ref=paginator, extra=config.extra) }}

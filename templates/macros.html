@@ -1,5 +1,5 @@
 {% macro post(page) %}
-<section class="catalogue">
+<div class="catalogue">
   <article class="catalogue-item" itemscope itemtype="http://schema.org/BlogPosting">
     <a href="{{page.permalink}}">
 
@@ -28,7 +28,7 @@
       - {{ page.reading_time }} minutes
     </div>
   </article>
-</section>
+</div>
   {% endmacro post %}
 
 {% macro post_nav(ref, extra) %}

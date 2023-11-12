@@ -43,14 +43,16 @@
   }
 }
 
-// Custom
-
 .catalogue {
+  border-bottom: 1px solid #e5e5e5;
+  border-width: 1px 0;
+  padding: 0.5rem 0;
+  margin: 0 0 1rem;
   &-item {
     border-bottom: 1px solid grey;
     color: black;
     display: block;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {
@@ -86,21 +88,7 @@
 }
 
 .description {
-  // padding-bottom: 0.5rem;
-}
-
-.category,
-.description,
-.title {
-  // display: block;
-}
-
-.category,
-.description,
-.extra {
+  margin-bottom: 0.5rem;
   color: vars.$font-color;
-  // font-size: 15px;
-  // line-height: 20px;
-  // text-decoration: none;
-  // text-align: justify;
+  text-align: justify;
 }
