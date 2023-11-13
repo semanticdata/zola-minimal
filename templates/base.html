@@ -27,7 +27,7 @@
       <a href="{{ config.base_url }}">
         <h1>📚 {{ config.title }}</h1>
         {% if config.extra.logo %}
-        <img src="{{ config.extra.logo }}" alt="Logo" />
+        <img src="{{ get_url(path="img/logo.png") }}" alt="Logo" />
       {% endif %}
     </a>
 
