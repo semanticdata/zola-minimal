@@ -1,7 +1,7 @@
 # Site's URL. Please include trailing "/".
-base_url = "https://semanticdata.github.io/zola-new/"
-title = "Zola Portfolio"
-description = "Portfolio is a Zola theme based on the Jekyll theme of the same name."
+base_url = "https://semanticdata.github.io/zola-minimal/"
+title = "Zola Minimal"
+description = "Minimal is a Zola theme based on the Jekyll theme of the same name."
 
 compile_sass = true
 build_search_index = false
