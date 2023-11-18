@@ -1,9 +1,9 @@
-name = "Minimal"
+name = "Cache"
 description = "Description of the theme or, at least a placeholder while a description is written."
 license = "MIT"
-homepage = "https://github.com/semanticdata/zola-minimal"
+homepage = "https://github.com/semanticdata/zola-cache"
 min_version = "0.17.2"
-demo = "https://semanticdata.github.io/zola-minimal/"
+demo = "https://semanticdata.github.io/zola-cache/"
 
 [author]
 name = "Miguel Pimentel"

@@ -1,6 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ section.title }}</h1>
-{{ section.content | safe }}
+<h1>{{ section.title | safe }}
+ {{ section.content | safe}}
+
+ {% if section.pages %}
+ {% for page in section.pages %}
+ 
+ <hr>
+ 
+ <article class="post">
+   <time datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
+   <h1 class="post-title">{{ page.title }}</h1>
+ 
+   {% if page.description %}
+   <p class="subtitle">{{ page.description | truncate(length=280) | safe }}</p>
+   {% endif %}
+
+ </article>
+ {% endfor %}
+ {% endif %}
+
 {% endblock content %}
+
+{# {% extends "base.html" %}
+
+<!-- Layout for all non-blog sections. -->
+{% block content %}
+<h1>{{ section.title | safe }}</h1>
+<hr>
+{{ section.content | safe }}
+{% endblock content %} #}

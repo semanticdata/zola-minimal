@@ -1,7 +1,0 @@
-<div>
-	{% for page in paginator.pages -%}
-	{{ macros::post(page=page) }}
-	{%- endfor %}
-</div>
-
-{{ macros::post_nav(ref=paginator, extra=config.extra) }}

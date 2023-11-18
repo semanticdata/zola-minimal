@@ -1,14 +1,8 @@
 ---
 title: Markdown Showcase
-description: "This is intended as a quick reference and showcase of Markdown's synthax."
+description: "This is intended as a quick reference and showcase of Markdown's synthax. I use this test page with most, if not all of my Markdown related projects."
 date: 2023-06-06
-# taxonomies:
-#   tags: [placeholder, markdown, reference]
 ---
-
-This is intended as a quick reference and showcase of Markdown's synthax.
-
-<!-- more -->
 
 # Heading Level 1
 
@@ -78,19 +72,6 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 * List item
 * Another item
 * And another item
-
-### Nested List
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-* Item
- 1. First Sub-item
- 2. Second Sub-item
-
-1. Numbered Item
-2. Another one
- 1. Sub-item
- * Unordered again
 
 ## Code
 

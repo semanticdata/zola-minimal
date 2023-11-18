@@ -1,65 +1,52 @@
-{% import 'macros.html' as macros %}
-
 <!DOCTYPE html>
-<html lang="en-US" <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" itemprop="about" content="{{config.description}}">
-<title>{% block title %}{{ config.title }}{% endblock title %}</title>
-<meta name="description" itemprop="about" content="{{config.description}}">
-<link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="shortcut icon" type="image/ico" sizes="16x16" href="/favicon.ico">
-<link rel="manifest" href="/site.webmanifest">
-{%- if config.generate_rss %}
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
-{%- endif -%}
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" itemprop="about" content="{{config.description}}">
+  <link rel="stylesheet" href="{{ get_url(path="styles.css") | safe }}">
 </head>
 
 <body>
-
   <div class="wrapper">
-
     <header>
-      <a href="{{ config.base_url }}">
-        <h1>📚 {{ config.title }}</h1>
-        {% if config.extra.logo %}
-        <img src="{{ get_url(path="img/logo.png") }}" alt="Logo" />
-      {% endif %}
-    </a>
 
-      <p class="sidebar-description">{{ config.description | safe }}</p>
+      <a href="{{ get_url(path="/") | safe }}">
+      <img src="{{ get_url(path="img/logo.png") | safe }}" alt="Logo" /></a>
 
-      {# {% if site.github.is_project_page %} #}
-      <p class="view"><a href="https://github.com/semanticdata/zola-minimal">View this Project on GitHub<br>
-          <small>semanticdata/zola-minimal</small></a></p>
-      {# {% endif %} #}
+      <p>{{ config.description }}</p>
 
-      {# {% if site.github.is_user_page %} #}
-      <p class="view"><a href="https://github.com/semanticdata/">View my GitHub Profile<br>
-        <small>semanticdata</small></a></p>
-      {# {% endif %} #}
+      <p class="view"><a href="https://github.com/semanticdata/project">View the Project on GitHub
+          <small>semanticdata/zola-project</small></a></p>
 
-{# {% include "partials/toc.html" %} #}
+      <p class="view"><a href="https://github.com/semanticdata/">semanticdata
+        <small>semanticdata/zola-project</small></a></p>
 
+      <ul class="downloads">
+        <li><a href="./">Download <strong>ZIP File</strong></a></li>
+        <li><a href="./">Download <strong>TAR Ball</strong></a></li>
+        <li><a href="./">View On <strong>GitHub</strong></a></li>
+      </ul>
     </header>
 
     <section>
+
       {% block content %}{% endblock content %}
+
     </section>
-
     <footer>
-      {# {% if site.github.is_project_page %} #}
+      <p>This project is maintained by <a href="https://github.com/semanticdata/">SemanticData</a></p>
+      {# <p><small>Hosted on GitHub Pages &mdash; Theme by <a
+            href="https://github.com/semanticdata/">semanticdata</a></small>
+      </p> #}
       <p><small>
-          Powered by <a href="https//www.getzola.org/">Zola</a> &mdash; Themed with <a
-            href="https://github.com/semanticdata/zola-minimal/">Minimal</a>.<br>
-          Project by <a href="https://miguelpimentel.do">Miguel Pimentel</a>.
-        </small></p>
-      {# {% endif %} #}
-
+        Powered by <a href="https//www.getzola.org/">Zola</a> &mdash; Themed with <a
+          href="https://github.com/semanticdata/zola-minimal/">Minimal</a>.<br>
+        Project maintained by <a href="https://miguelpimentel.do">Miguel Pimentel</a>.
+      </small></p>
     </footer>
   </div>
 </body>

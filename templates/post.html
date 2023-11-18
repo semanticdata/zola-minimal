@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <small>{{ page.date | safe }}</small>
+<h1>{{ page.title | safe }}</h1>
+
+<p class="view">by Miguel Pimentel</p>
+
+{{ page.content | safe }}
+
+{% if page.tags %}
+<small>tags: <em>{{ page.tags | safe }}</em></small>
+{% endif %}
+{% endblock content %}
+
+{# {% extends "base.html" %}
+
+<!-- Layout for all blog posts. -->
+{% block content %}
+<article class="post">
+  <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }} – {{ page.reading_time }} minutes</time>
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% if page.description %}
+  <p class="subtitle">{{ page.description }}</p>
+  {% endif %}
+
+{% if page.toc %}
+ {% include "partials/toc.html" %}
+{% endif %}
+
+  <hr>
+
+  {{ page.content | safe }}
+</article>
+
+{% if page.extra.author %}
+<p class="view">by {{ page.extra.author }}</p>
+{% endif %}
+
+{% if page.tags %}
+<small>tags: <em>{{ page.tags }}</em></small>
+{% endif %}
+{% endblock content %} #}

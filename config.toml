@@ -1,28 +1,29 @@
-base_url = "https://semanticdata.github.io/zola-minimal/"
-title = "Minimal"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt."
+# Site's URL. Please include trailing "/".
+base_url = "https://semanticdata.github.io/zola-new/"
+title = "Zola Portfolio"
+description = "Portfolio is a Zola theme based on the Jekyll theme of the same name."
 
 compile_sass = true
 build_search_index = false
 generate_feed = false
 minify_html = false
 
-taxonomies = [
-  { name = "categories", feed = true },
-  { name = "tags", feed = true },
-]
+# taxonomies = [
+#   { name = "categories", feed = true },
+#   { name = "tags", feed = true },
+# ]
 
 [markdown]
-highlight_code = false
+highlight_code = true
 highlight_theme = "ayu-light"
 
+[search]
+include_title = true
+include_description = false
+include_path = false
+include_content = true
+index_format = "elasticlunr_javascript"
+
 [extra]
-logo = true
-sidebar = [
-  { name = "Links", urls = [
-    { name = "Posts", url = "posts/" },
-    { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
-    { name = "Tags", url = "tags/" },
-    { name = "#placeholder", url = "tags/placeholder/" },
-  ] },
-]
+author = "Miguel Pimentel"
+email = "contact@miguelpimentel.do"

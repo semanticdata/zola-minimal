@@ -1,6 +1,8 @@
 ---
-Title: "Blog"
+# paginate_by: 4
+# transparent: true
+title: "Blog"
 sort_by: date
-paginate_by: 4
-template: "blog.html"
+# template: "blog.html"
+# page_template: "post.html"
 ---

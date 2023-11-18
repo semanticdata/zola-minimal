@@ -1,127 +1,79 @@
-@use "vars";
+@use "variables";
 
-// Core Style
+// Core Styles
 body {
-  background-color: vars.$background-color;
-  color: vars.$font-color;
-  padding: 2.5rem;
-  font-family: vars.$theme-font;
-  font-size: 14px;
-  line-height: 1.5;
+  background-color: variables.$bg-color;
+  padding: 50px;
+  font: 14px/1.5 variables.$font-family;
+  color: variables.$font-color;
+  font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: vars.$font-color;
+section {
+  width: variables.$section-width;
+  float: right;
+  padding-bottom: 50px;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 24px;
-  margin: 0 0 1rem;
-}
-
-a {
-  color: vars.$link-color;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #750099;
-}
-
-a small {
-  font-size: 11px;
-  color: vars.$small-text-color;
-  margin-top: -0.3em;
-  display: block;
-}
-
-img {
-  max-width: 100%;
+header {
+  width: variables.$header-width;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 blockquote {
-  border-left: 1px solid vars.$border-color;
+  border-left: 1px solid variables.$border-color;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
 }
 
-// Layout
-header {
-  width: 270px;
-  float: left;
-  position: fixed;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-section {
-  width: 500px;
-  float: right;
-  padding-bottom: 50px;
-}
-
-footer {
-  width: 270px;
-  float: left;
-  position: fixed;
-  bottom: 50px;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
 .wrapper {
-  width: 860px;
+  width: variables.$wrapper-width;
   margin: 0 auto;
 }
 
-// Tables
-table {
-  border-collapse: collapse;
-  width: 100%;
+h1 {
+  font-size: 24px;
 }
 
-table thead th,
-table tfoot th {
-  background: rgba(0, 0, 0, 0.2);
+// Links
+a {
+  color: variables.$link-color;
+  text-decoration: none;
 }
 
-table th,
-table td {
-  color: vars.$font-color;
-  padding: 2px 4px;
-  border: 1px solid vars.$border-color;
+a:hover,
+a:focus {
+  color: variables.$link-color-hover;
+  font-weight: bold;
+}
+
+a small {
+  font-size: 11px;
+  color: variables.$font-color-small;
+  margin-top: -0.3em;
+  display: block;
+}
+
+a:hover small {
+  color: variables.$font-color-small;
 }
 
 // Code
-pre,
-code {
-  border: 1px solid vars.$border-color;
-  background-color: vars.$block-background;
-  border-radius: 4px;
-}
-
-code {
-  padding: 1px 2px;
+code,
+pre {
+  font-family: variables.$font-family-code;
+  color: variables.$font-color-code;
 }
 
 pre {
-  padding: 0.25rem 0.5rem;
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid variables.$border-color;
   overflow-x: auto;
-
-  > code {
-    border: 0;
-  }
 }
 
 kbd {
@@ -138,83 +90,122 @@ kbd {
   vertical-align: middle;
 }
 
-// Others
-.sidebar-description {
-  padding-top: 1rem;
+// Miscellaneous
+img {
+  max-width: 100%;
 }
 
-.extra {
-  font-size: 0.75rem;
+small {
+  font-size: variables.$font-size-small;
 }
 
-// Blog posts paginator
-.catalogue {
-  border-bottom: 1px solid vars.$border-color;
-  border-width: 1px 0;
-  padding: 0.5rem 0;
-  margin: 0 0 1rem;
-  &-item {
-    border-bottom: 1px solid vars.$border-color;
-    padding-bottom: 2rem;
+hr {
+  border: 0;
+  background: variables.$border-color;
+  height: 1px;
+}
 
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 5rem;
-    }
+footer {
+  width: variables.$footer-width;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 
-    &:last-child {
-      border: 0;
-    }
+// Tables
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+table thead th,
+table tfoot th {
+  background: rgba(0, 0, 0, 0.2);
+}
+table th,
+table td {
+  padding: 2px 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+// Media Layout
+@media print, screen and (max-width: variables.$media-max-width) {
+  div.wrapper {
+    width: auto;
+    margin: 0;
   }
 
-  &-time {
-    color: vars.$small-text-color;
-    // font-family: $serif-secondary;
-    letter-spacing: 0.5px;
+  header,
+  section,
+  footer {
+    float: none;
+    position: static;
+    width: auto;
   }
 
-  &-title {
-    display: block;
-    // color: black;
-    // font-family: $sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0.5rem 0;
+  header {
+    padding-right: 320px;
   }
 
-  &-line {
-    @include vars.transition(all 0.3s ease-out);
-    border-top: 0.2rem solid grey;
-    display: block;
-    width: 2rem;
+  section {
+    border: 1px solid variables.$border-color;
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+
+  header a small {
+    display: inline;
+  }
+
+  header ul {
+    position: absolute;
+    right: 50px;
+    top: 52px;
   }
 }
 
-.description {
-  margin-bottom: 0.5rem;
-  color: vars.$font-color;
-  text-align: justify;
+@media print, screen and (max-width: variables.$media-max-width-smaller) {
+  body {
+    word-wrap: break-word;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header ul,
+  header p.view {
+    position: static;
+  }
+
+  pre,
+  code {
+    word-wrap: normal;
+  }
 }
 
-// Paginator controls
-.page-navigator {
-  margin-bottom: 1rem;
-  text-align: center;
-
-  & > span,
-  & > a {
-    // color: $color-lgrey;
-    font-size: 12px;
+@media print, screen and (max-width: variables.$media-max-width-even-smaller) {
+  body {
+    padding: 15px;
   }
 
-  & > .pages {
-    // color: $color-grey;
-    font-size: 0.9rem;
-    margin: 0 10px;
+  .downloads {
+    width: 99%;
   }
 
-  & > a {
-    color: vars.$font-color;
-    text-decoration: none;
+  .downloads li,
+  .downloads li + li + li {
+    width: 33%;
+  }
+}
+
+@media print {
+  body {
+    padding: 0.4in;
+    font-size: 12pt;
+    // color: #444;
   }
 }
