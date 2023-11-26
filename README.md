@@ -58,18 +58,6 @@ Adding your custom css is as easy as adding your own styles to the `sass/_custom
 | `zola build` | Build only      |
 | `zola serve` | Build and Serve |
 
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for **Zola Minimal**. Please
-search [existing issues](https://github.com/semanticdata/zola-minimal/issues). It’s
-possible someone has already reported the same problem.
-
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-minimal/issues/new).
-
-## Contributing
-
-We'd love your help! Please see [CONTRIBUTING.md](./.github/CONTRIBUTING.md) to learn about the kinds of contributions we're looking for.
-
 ## Acknowledgments
 
 Especial thanks to the [Minimal](https://github.com/pages-themes/minimal) theme for [Jekyll](https://jekyllrb.com/). They provided both the bulding blocks, and the inspiration necessary to make this happen.

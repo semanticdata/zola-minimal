@@ -8,14 +8,9 @@ build_search_index = false
 generate_feed = false
 minify_html = false
 
-# taxonomies = [
-#   { name = "categories", feed = true },
-#   { name = "tags", feed = true },
-# ]
-
 [markdown]
 highlight_code = true
-highlight_theme = "ayu-light"
+# highlight_theme = "ayu-light"
 
 [search]
 include_title = true
@@ -25,5 +20,5 @@ include_content = true
 index_format = "elasticlunr_javascript"
 
 [extra]
-author = "Miguel Pimentel"
-email = "contact@miguelpimentel.do"
+author = "Miguel Pimentel" # Author's name
+email = "contact@miguelpimentel.do" # Author's email
