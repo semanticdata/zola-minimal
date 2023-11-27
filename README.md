@@ -18,13 +18,11 @@ Check out the live [Demo](https://miguelpimentel.do/zola-minimal/).
 
 - Placeholder
 
-<!--
-## Screenshots
+## Screenshot
 
-|                           Desktop                            |                          Mobile                          |
-| :----------------------------------------------------------: | :------------------------------------------------------: |
-| ![website screenshot](screenshots/screenshot-index-dark.png) | ![website screenshot](screenshots/screenshot-mobile.png) |
--->
+|    Desktop                            |
+| :----------------------------------------------------------: |
+| ![theme screenshot](screenshot.png) |
 
 ## Requirements
 
