@@ -1,7 +1,4 @@
 ---
-title: Home
-sort_by: date
-# paginate_by: 4
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -41,15 +38,15 @@ end
 
 #### Header 4
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
 
 ##### Header 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
 ###### Header 6
 
@@ -60,39 +57,39 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+### There's a horizontal rule below this
 
 * * *
 
-### Here is an unordered list:
+### Here is an unordered list
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+* Item foo
+* Item bar
+* Item baz
+* Item zip
 
-### And an ordered list:
+### And an ordered list
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+1. Item one
+1. Item two
+1. Item three
+1. Item four
 
-### And a nested list:
+### And a nested list
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+    * level 3 item
+    * level 3 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+* level 1 item
 
 ### Small image
 
@@ -102,8 +99,7 @@ end
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
-
-### Definition lists can be used with HTML syntax.
+### Definition lists can be used with HTML syntax
 
 <dl>
 <dt>Name</dt>
@@ -116,10 +112,10 @@ end
 <dd>Green</dd>
 </dl>
 
-```
+```txt
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
+```txt
 The final element.
 ```
