@@ -1,5 +1,5 @@
 name = "Minimal"
-description = "Minimal is a Zola port of the Jekyll theme with the same name."
+description = "📚 Minimal is a Zola port of the Jekyll theme with the same name."
 license = "MIT"
 homepage = "https://github.com/semanticdata/zola-minimal/"
 min_version = "0.18.0"
