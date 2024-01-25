@@ -8,17 +8,38 @@
   <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-minimal.svg" />
 </p>
 
-## Introduction
+## Overview
 
 Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready website. It's based on the [Minimal](https://github.com/pages-themes/minimal) theme for [Jekyll](https://jekyllrb.com/).
 
-Check out the live [Demo](https://miguelpimentel.do/zola-minimal/).
+Check out the live [Demo](https://miguelpimentel.do/zola-minimal/) for the theme.
+
+## Table of Contents
+
+<details>
+<summary>Show/Hide</summary>
+
+- [Overview](#overview)
+- [Table of Contents](#table-of-contents)
+- [Screenshot](#screenshot)
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Quick Start](#quick-start)
+  - [Useful Commands](#useful-commands)
+- [Customization](#customization)
+  - [Custom CSS Styles](#custom-css-styles)
+- [Reporting Issues](#reporting-issues)
+- [Contributing](#contributing)
+- [Acknowledgements and Attributions](#acknowledgements-and-attributions)
+- [License](#license)
+
+</details>
 
 ## Screenshot
 
 ![theme screenshot](screenshot-1.png)
 
-## Running the Site Locally
+## Getting Started
 
 Tips that will help you develop and preview the site locally.
 
@@ -61,8 +82,7 @@ Adding custom CSS is as easy as adding your styles to `sass/_custom.scss`. This 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for **Minimal**. Please
-search [existing issues](https://github.com/semanticdata/zola-minima/issues). It’s
-possible someone has already reported the same problem.
+search [existing issues](https://github.com/semanticdata/zola-minimal/issues). It’s possible someone has already reported the same problem.
 
 If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-minimal/issues/new).
 
@@ -75,10 +95,6 @@ Please read and be aware of the [Code of Conduct](.github/CODE_OF_CONDUCT.md) be
 ## Acknowledgements and Attributions
 
 Zola Minimal is a fork of the Jekyll theme [Minimal](https://github.com/pages-themes/minimal).
-
-The icons used throughout the site are kindly provided by [UXWing](https://uxwing.com/license/). Read their [license](https://uxwing.com/license/).
-
-Other icons used come from [Remix Icon](https://remixicon.com/). Check out their [license](https://remixicon.com/license).
 
 ## License
 
