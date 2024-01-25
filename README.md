@@ -26,7 +26,7 @@ Check out the live [Demo](https://miguelpimentel.do/zola-minimal/) for the theme
   - [Requirements](#requirements)
   - [Quick Start](#quick-start)
   - [Useful Commands](#useful-commands)
-- [Customization](#customization)
+- [Configuration](#configuration)
   - [Custom CSS Styles](#custom-css-styles)
 - [Reporting Issues](#reporting-issues)
 - [Contributing](#contributing)
@@ -71,7 +71,7 @@ A short list of commands that will help you develop your own version of the them
 | `zola build`               | Build only                 |
 | `zola serve`               | Build and Serve            |
 
-## Customization
+## Configuration
 
 You can changed the configuration, templates and content yourself. Refer to the `config.toml`, and templates files for ideas. In most cases you only need to modify the contents of `config.toml` to customize the appearance of your blog. Make sure to visit tyhe [Zola Documentation](https://www.getzola.org/documentation/getting-started/overview/).
 
