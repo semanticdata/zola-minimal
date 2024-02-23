@@ -1,6 +1,6 @@
-<h1 align=center>📚 Minimal</h1>
+# 📚 Minimal
 
-<p align="center">
+<p align="">
   <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-minimal" />
   <img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
   <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
@@ -8,30 +8,28 @@
   <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-minimal.svg" />
 </p>
 
-## Overview
-
 Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready website. It's based on the [Minimal](https://github.com/pages-themes/minimal) theme for [Jekyll](https://jekyllrb.com/).
 
-Check out the live [Demo](https://miguelpimentel.do/zola-minimal/) for the theme.
+Check out the live [Demo](https://semanticdata.github.io/zola-minimal/) for the theme.
 
 ## Table of Contents
 
 <details>
 <summary>Show/Hide</summary>
 
-- [Overview](#overview)
-- [Table of Contents](#table-of-contents)
-- [Screenshot](#screenshot)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quick Start](#quick-start)
-  - [Useful Commands](#useful-commands)
-- [Configuration](#configuration)
-  - [Custom CSS Styles](#custom-css-styles)
-- [Reporting Issues](#reporting-issues)
-- [Contributing](#contributing)
-- [Acknowledgements and Attributions](#acknowledgements-and-attributions)
-- [License](#license)
+- [📚 Minimal](#-minimal)
+  - [Table of Contents](#table-of-contents)
+  - [Screenshot](#screenshot)
+  - [Getting Started](#getting-started)
+    - [Requirements](#requirements)
+    - [Quick Start](#quick-start)
+    - [Useful Commands](#useful-commands)
+  - [Configuration](#configuration)
+    - [Custom CSS Styles](#custom-css-styles)
+  - [Reporting Issues](#reporting-issues)
+  - [Contributing](#contributing)
+  - [Acknowledgements and Attributions](#acknowledgements-and-attributions)
+  - [License](#license)
 
 </details>
 
