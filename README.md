@@ -14,24 +14,15 @@ Check out the live [Demo](https://semanticdata.github.io/zola-minimal/) for the 
 
 ## Table of Contents
 
-<details>
-<summary>Show/Hide</summary>
-
 - [📚 Minimal](#-minimal)
   - [Table of Contents](#table-of-contents)
   - [Screenshot](#screenshot)
   - [Getting Started](#getting-started)
-    - [Requirements](#requirements)
-    - [Quick Start](#quick-start)
-    - [Useful Commands](#useful-commands)
   - [Configuration](#configuration)
-    - [Custom CSS Styles](#custom-css-styles)
   - [Reporting Issues](#reporting-issues)
   - [Contributing](#contributing)
   - [Acknowledgements and Attributions](#acknowledgements-and-attributions)
   - [License](#license)
-
-</details>
 
 ## Screenshot
 
@@ -47,14 +38,17 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ### Quick Start
 
-```bash
-# clone the repo
+```sh
+# Clone the repo
 git clone git@github.com:semanticdata/zola-minimal.git
-# change directory into the cloned folder
+
+# Change directory into the cloned folder
 cd zola-minima
-# serve the site locally
+
+# Serve the site locally
 zola serve
-# open http://127.0.0.1:1111/ in the browser
+
+# Open http://127.0.0.1:1111/ in the browser
 ```
 
 For more detailed instructions, visit the [Documentation](https://www.getzola.org/documentation/themes/installing-and-using-themes/) page about installing and using themes.
@@ -63,11 +57,11 @@ For more detailed instructions, visit the [Documentation](https://www.getzola.or
 
 A short list of commands that will help you develop your own version of the theme.
 
-| Command                    | Description                |
-| -------------------------- | -------------------------- |
-| `zola init <my-repo>`      | Initiate new Zola site     |
-| `zola build`               | Build only                 |
-| `zola serve`               | Build and Serve            |
+| Command                 | Description            |
+| ----------------------- | ---------------------- |
+| `zola init <repo-name>` | Initiate new Zola site |
+| `zola build`            | Build only             |
+| `zola serve`            | Build and Serve        |
 
 ## Configuration
 
@@ -96,4 +90,4 @@ Zola Minimal is a fork of the Jekyll theme [Minimal](https://github.com/pages-th
 
 ## License
 
-Source code in this repository is available under the [MIT](LICENSE) license. You are free to use this code however you like. That said, some acknowledgement would be well received.
+Source code in this repository is available under the [MIT License](LICENSE).
