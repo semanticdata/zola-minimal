@@ -8,9 +8,9 @@
   <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-minimal.svg" />
 </p>
 
-Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready website. It's based on the [Minimal](https://github.com/pages-themes/minimal) theme for [Jekyll](https://jekyllrb.com/).
+Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready landing page or website. It is based on the [Jekyll](https://jekyllrb.com/) theme with [the same name](https://github.com/pages-themes/minimal).
 
-Check out the live [Demo](https://semanticdata.github.io/zola-minimal/) for the theme.
+Check out the [demo](https://semanticdata.github.io/zola-minimal/).
 
 ## Table of Contents
 
@@ -20,8 +20,7 @@ Check out the live [Demo](https://semanticdata.github.io/zola-minimal/) for the 
   - [Getting Started](#getting-started)
   - [Configuration](#configuration)
   - [Reporting Issues](#reporting-issues)
-  - [Contributing](#contributing)
-  - [Acknowledgements and Attributions](#acknowledgements-and-attributions)
+  - [Attributions](#attributions)
   - [License](#license)
 
 ## Screenshot
@@ -65,7 +64,7 @@ A short list of commands that will help you develop your own version of the them
 
 ## Configuration
 
-You can changed the configuration, templates and content yourself. Refer to the `config.toml`, and templates files for ideas. In most cases you only need to modify the contents of `config.toml` to customize the appearance of your blog. Make sure to visit tyhe [Zola Documentation](https://www.getzola.org/documentation/getting-started/overview/).
+You can changed the configuration, templates and content yourself. Refer to the `config.toml`, and templates files for ideas. In most cases you only need to modify the contents of `config.toml` to customize the appearance of your blog. Make sure to visit the [Zola Documentation](https://www.getzola.org/documentation/getting-started/overview/).
 
 ### Custom CSS Styles
 
@@ -78,13 +77,7 @@ search [existing issues](https://github.com/semanticdata/zola-minimal/issues). I
 
 If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-minimal/issues/new).
 
-## Contributing
-
-We'd love your help! Please see [CONTRIBUTING](./CONTRIBUTING.md) to learn about the kinds of contributions we're looking for.
-
-Please read and be aware of the [Code of Conduct](.github/CODE_OF_CONDUCT.md) before conttributing.
-
-## Acknowledgements and Attributions
+## Attributions
 
 Zola Minimal is a fork of the Jekyll theme [Minimal](https://github.com/pages-themes/minimal).
 
