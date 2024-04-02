@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
   <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
   <img src="https://img.shields.io/github/last-commit/semanticdata/zola-minimal" />
-  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-minimal.svg" />
+  <img src="https://img.shields.io/website/https/zola-minimal.vercel.app.svg" />
 </p>
 
 [Minimal](https://zola-minimal.vercel.app/) is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready landing page or website. It is based on the [Jekyll](https://jekyllrb.com/) theme with [the same name](https://github.com/pages-themes/minimal).
