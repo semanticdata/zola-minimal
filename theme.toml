@@ -3,7 +3,7 @@ description = "📚 Minimal is a Zola port of the Jekyll theme with the same nam
 license = "MIT"
 homepage = "https://github.com/semanticdata/zola-minimal/"
 min_version = "0.18.0"
-demo = "https://semanticdata.github.io/zola-minimal/"
+demo = "https://zola-minimal.vercel.app/"
 
 [extra]
 
