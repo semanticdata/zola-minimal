@@ -8,24 +8,24 @@
   <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-minimal.svg" />
 </p>
 
-Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready landing page or website. It is based on the [Jekyll](https://jekyllrb.com/) theme with [the same name](https://github.com/pages-themes/minimal).
+[Minimal](https://zola-minimal.vercel.app/) is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready landing page or website. It is based on the [Jekyll](https://jekyllrb.com/) theme with [the same name](https://github.com/pages-themes/minimal).
 
-Check out the [demo](https://semanticdata.github.io/zola-minimal/).
+Check out the [demo](https://zola-minimal.vercel.app/).
 
 ## Table of Contents
 
 - [📚 Minimal](#-minimal)
   - [Table of Contents](#table-of-contents)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Getting Started](#getting-started)
   - [Configuration](#configuration)
   - [Reporting Issues](#reporting-issues)
   - [Attributions](#attributions)
   - [License](#license)
 
-## Screenshot
+## Screenshots
 
-![theme screenshot](screenshot-1.png)
+![theme screenshot](screenshot.png)
 
 ## Getting Started
 
