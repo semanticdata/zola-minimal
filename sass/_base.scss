@@ -16,7 +16,7 @@ body {
   background-color: #fff;
   padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #727272;
+  color: #222;
   font-weight: 400;
 }
 
@@ -49,17 +49,6 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
-  color: #393939;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: #494949;
-}
-
 a {
   color: #267cb9;
   text-decoration: none;
@@ -67,7 +56,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #069;
+  color: salmon;
   font-weight: bold;
 }
 
@@ -114,7 +103,7 @@ footer {
 
 pre {
   padding: 8px 15px;
-  background: #f8f8f8;
+  // background: #f8f8f8;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
   overflow-x: auto;
