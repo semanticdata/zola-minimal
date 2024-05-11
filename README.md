@@ -25,10 +25,10 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ```sh
 # 1. Clone the repo
-git clone git@github.com:semanticdata/mabuya.git
+git clone git@github.com:semanticdata/zola-minimal.git
 
 # 2. Change directory into clone
-cd mabuya
+cd zola-minimal
 
 # 3. Serve the site locally
 zola serve
