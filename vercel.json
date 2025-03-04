@@ -1,6 +1,6 @@
 {
   "env": {
-    "ZOLA_VERSION": "0.18.0"
+    "ZOLA_VERSION": "0.20.0"
   },
   "headers": [
     {

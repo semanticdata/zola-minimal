@@ -5,7 +5,7 @@ description = "Minimal is a Zola theme based on the Jekyll theme of the same nam
 
 compile_sass = true
 build_search_index = false
-generate_feed = false
+generate_feeds = false
 minify_html = false
 
 [markdown]
